@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raja Shahzaib — Web &amp; App Developer</title>
+  <meta name="description" content="Raja Shahzaib — freelance developer building fast, modern websites, web apps and mobile apps for businesses." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Glow background -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+  <div class="bg-grid"></div>
+
+  <!-- Planets -->
+  <div class="planet planet-1"></div>
+  <div class="planet planet-2"></div>
+  <div class="planet planet-3"></div>
+
+  <!-- Galaxy: twinkling stars + shooting stars -->
+  <div class="stars" id="stars">
+    <span class="shooting-star ss1"></span>
+    <span class="shooting-star ss2"></span>
+    <span class="shooting-star ss3"></span>
+  </div>
+
+  <!-- Floating particles -->
+  <div class="particles" id="particles"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-inner container">
+      <a href="#home" class="logo">Raja<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+      </ul>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero container" id="home">
+    <div class="hero-content">
+      <p class="hero-badge reveal">👋 Hi, I'm</p>
+      <h1 class="hero-title reveal">Raja <span class="gradient-text">Shahzaib</span></h1>
+      <h2 class="hero-sub reveal">I build <span class="typed" id="typed"></span><span class="cursor">|</span></h2>
+      <p class="hero-desc reveal">
+        Freelance developer helping businesses grow with fast, modern
+        websites, web apps and mobile apps — delivered quickly, built to
+        convert visitors into customers.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><strong>100%</strong><span>Client Satisfaction</span></div>
+        <div class="stat"><strong>Fast</strong><span>3–7 Day Delivery</span></div>
+        <div class="stat"><strong>Mobile</strong><span>First Design</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="hero-code">
+        <div class="mock-bar"><span></span><span></span><span></span></div>
+        <div class="code-lines">
+          <p><span class="c-purple">const</span> <span class="c-cyan">project</span> = {</p>
+          <p>&nbsp;&nbsp;client: <span class="c-green">'Your Business'</span>,</p>
+          <p>&nbsp;&nbsp;build: <span class="c-green">'Website + App'</span>,</p>
+          <p>&nbsp;&nbsp;speed: <span class="c-orange">'blazing fast'</span>,</p>
+          <p>&nbsp;&nbsp;delivered: <span class="c-cyan">true</span> ✅</p>
+          <p>};</p>
+        </div>
+      </div>
+      <div class="hero-phone">
+        <div class="mock-notch"></div>
+        <div class="hp-hero"></div>
+        <div class="hp-row"><i></i><i></i></div>
+        <div class="hp-btn"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section container" id="services">
+    <p class="section-tag reveal">What I Do</p>
+    <h2 class="section-title reveal">Services</h2>
+    <div class="cards-grid services-grid">
+      <article class="card reveal">
+        <div class="card-icon icon-web">
+          <svg viewBox="0 0 64 48" aria-hidden="true">
+            <rect x="1.5" y="1.5" width="61" height="45" rx="6" class="svg-frame" />
+            <line x1="1.5" y1="12" x2="62.5" y2="12" class="svg-frame" />
+            <circle cx="9" cy="7" r="2" fill="#ff5f57" />
+            <circle cx="16" cy="7" r="2" fill="#febc2e" />
+            <circle cx="23" cy="7" r="2" fill="#28c840" />
+            <rect x="8" y="19" width="30" height="4.5" rx="2.25" class="svg-line l1" />
+            <rect x="8" y="27.5" width="44" height="4.5" rx="2.25" class="svg-line l2" />
+            <rect x="8" y="36" width="22" height="4.5" rx="2.25" class="svg-line l3" />
+          </svg>
+        </div>
+        <h3>Website Development</h3>
+        <p>Business websites, landing pages and portfolios that load fast, look premium, and bring you customers.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-icon icon-cart">
+          <svg viewBox="0 0 64 56" aria-hidden="true">
+            <path d="M5 8h9l8 30h27l8-21H20" class="svg-stroke" />
+            <circle cx="27" cy="48" r="4" class="svg-stroke" />
+            <circle cx="45" cy="48" r="4" class="svg-stroke" />
+            <rect x="31" y="16" width="11" height="11" rx="2.5" class="cart-item" />
+          </svg>
+        </div>
+        <h3>Web Apps &amp; Ordering Systems</h3>
+        <p>Restaurant online ordering, booking systems and custom web apps — ready-made solutions customized to your brand and delivered fast.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-icon icon-phone">
+          <svg viewBox="0 0 36 56" aria-hidden="true">
+            <rect x="1.5" y="1.5" width="33" height="53" rx="7" class="svg-frame" />
+            <rect x="7" y="9" width="22" height="7" rx="2.5" class="svg-line p1" />
+            <rect x="7" y="20" width="22" height="16" rx="2.5" class="svg-line p2" />
+            <rect x="7" y="40" width="22" height="7" rx="3.5" class="svg-line p3" />
+          </svg>
+        </div>
+        <h3>Mobile-Friendly Redesigns</h3>
+        <p>Old, slow or broken website? I redesign it into a fast, modern, responsive site that works perfectly on every phone.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-icon icon-app">
+          <svg viewBox="0 0 44 56" aria-hidden="true">
+            <rect x="1.5" y="1.5" width="41" height="53" rx="7" class="svg-frame" />
+            <rect x="8" y="9" width="12" height="12" rx="3.5" class="app-dot a1" />
+            <rect x="24" y="9" width="12" height="12" rx="3.5" class="app-dot a2" />
+            <rect x="8" y="25" width="12" height="12" rx="3.5" class="app-dot a3" />
+            <rect x="24" y="25" width="12" height="12" rx="3.5" class="app-dot a4" />
+            <rect x="13" y="46" width="18" height="4" rx="2" class="svg-line" />
+          </svg>
+        </div>
+        <h3>Mobile App Development</h3>
+        <p>Android &amp; iOS apps for your business — ordering apps, booking apps and more, built to feel smooth and launch fast.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section container" id="projects">
+    <p class="section-tag reveal">My Work</p>
+    <h2 class="section-title reveal">Featured Projects</h2>
+    <div class="cards-grid projects-grid">
+
+      <!-- TODO: replace with your real client project -->
+      <article class="project-card reveal">
+        <div class="project-thumb">
+          <div class="mock-browser">
+            <div class="mock-bar"><span></span><span></span><span></span></div>
+            <div class="mock-hero"></div>
+            <div class="mock-row">
+              <div class="mock-box"></div>
+              <div class="mock-box"></div>
+              <div class="mock-box"></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>Avion Talent — Recruitment Platform</h3>
+          <p>A US-based recruitment web platform delivered to a real client — job search with filters, CV upload, featured listings and job alerts for candidates and employers.</p>
+          <div class="tags"><span>Web App</span><span>Next.js</span><span>Live Client Work</span></div>
+          <a href="https://avion-talent.com/" class="project-link" target="_blank" rel="noopener">View Live →</a>
+        </div>
+      </article>
+
+      <!-- TODO: link your restaurant ordering demo when ready -->
+      <article class="project-card reveal">
+        <div class="project-thumb thumb-2">
+          <div class="mock-phone">
+            <div class="mock-notch"></div>
+            <div class="mock-food"><span>🍔</span><div class="food-lines"><i></i><i></i></div></div>
+            <div class="mock-food"><span>🍕</span><div class="food-lines"><i></i><i></i></div></div>
+            <div class="mock-order-btn">Order Now</div>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>Restaurant Online Ordering App</h3>
+          <p>A ready-to-launch online ordering web app for restaurants — menu, cart and order flow, customizable to any brand in days.</p>
+          <div class="tags"><span>Web App</span><span>Ordering</span><span>Responsive</span></div>
+          <a href="#" class="project-link">Live Demo Coming Soon</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-thumb thumb-3">
+          <div class="mock-next">
+            <div class="rocket">🚀</div>
+            <span class="sparkle s1">✦</span>
+            <span class="sparkle s2">✦</span>
+            <span class="sparkle s3">✦</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>Your Business Could Be Next</h3>
+          <p>Need a website or web app for your business? Let's build something your customers will love.</p>
+          <div class="tags"><span>Fast Delivery</span><span>Affordable</span></div>
+          <a href="#contact" class="project-link">Start a Project →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section container" id="about">
+    <p class="section-tag reveal">Who I Am</p>
+    <h2 class="section-title reveal">About Me</h2>
+    <div class="about-grid">
+
+      <div class="about-card reveal">
+        <div class="avatar-ring">
+          <img src="raja-cutout.png" alt="Raja Shahzaib" />
+        </div>
+        <h3>Raja Shahzaib</h3>
+        <p class="about-role">Web &amp; Mobile App Developer</p>
+        <div class="about-mini-stats">
+          <div><strong>BS-IT</strong><span>Graduate</span></div>
+          <div><strong>3–7</strong><span>Day Delivery</span></div>
+          <div><strong>100%</strong><span>Dedication</span></div>
+        </div>
+        <a href="#contact" class="btn btn-primary">Work With Me</a>
+      </div>
+
+      <div class="about-text reveal">
+        <p class="about-intro">
+          I turn ideas into <span class="gradient-text">fast, beautiful digital
+          products</span> that help businesses grow.
+        </p>
+        <p>
+          I'm <strong>Raja Shahzaib</strong>, a web and mobile app developer with a
+          BS in Information Technology. Whether you need a stunning business website,
+          an online ordering system, or a mobile app for your customers — I handle
+          everything from design to launch, so you can focus on running your business.
+        </p>
+        <p>
+          Why clients enjoy working with me: I <strong>deliver fast</strong> (most
+          projects in 3–7 days), I explain everything in <strong>plain language</strong>
+          — no confusing tech talk — and I <strong>don't disappear after delivery</strong>.
+          Your success is my portfolio.
+        </p>
+        <ul class="about-points">
+          <li>⚡ Fast 3–7 day delivery</li>
+          <li>📱 Websites, web &amp; mobile apps</li>
+          <li>🎯 Design that converts visitors</li>
+          <li>💬 Clear, jargon-free updates</li>
+          <li>🔧 Free minor fixes after delivery</li>
+          <li>🤝 Long-term support available</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section container" id="contact">
+    <p class="section-tag reveal">Get In Touch</p>
+    <h2 class="section-title reveal">Let's Build Something</h2>
+    <div class="contact-box reveal">
+      <p>Have a project in mind? Send me a message — I usually reply within a few hours.</p>
+      <div class="contact-actions">
+        <!-- TODO: replace with your business email and WhatsApp number -->
+        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=raja.shahzaib.dev@gmail.com&amp;su=Project%20Inquiry" class="btn btn-primary" target="_blank" rel="noopener">📧 Email Me</a>
+        <button class="btn btn-ghost" id="copyEmail" data-email="raja.shahzaib.dev@gmail.com">📋 Copy Email</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Raja Shahzaib — Web &amp; App Developer. All rights reserved.</p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
